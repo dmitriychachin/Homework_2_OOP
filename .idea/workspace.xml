@@ -4,30 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b5665be-4bc6-43b3-b24d-29b0d572edf3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOPSeminar2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Flyable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Flysquirrel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Goat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Herbivore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mammal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Platypus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Predator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Radio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Speakable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Walkable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Woof.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Zoo.java" afterDir="false" />
+    <list default="true" id="2b5665be-4bc6-43b3-b24d-29b0d572edf3" name="Changes" comment="seminar complete">
+      <change afterPath="$PROJECT_DIR$/src/Amphibian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Swimable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -57,7 +37,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/alexey/edu/Java/OOPSeminar2"
   }
 }]]></component>
   <component name="RunManager">
@@ -83,6 +64,29 @@
       <option name="presentableId" value="Default" />
       <updated>1680195776215</updated>
     </task>
+    <task id="LOCAL-00001" summary="seminar complete">
+      <created>1680201461610</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680201461610</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="seminar complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="seminar complete" />
   </component>
 </project>
