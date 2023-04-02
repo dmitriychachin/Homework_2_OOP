@@ -4,10 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b5665be-4bc6-43b3-b24d-29b0d572edf3" name="Changes" comment="seminar complete">
-      <change afterPath="$PROJECT_DIR$/src/Amphibian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Swimable.java" afterDir="false" />
+    <list default="true" id="2b5665be-4bc6-43b3-b24d-29b0d572edf3" name="Changes" comment="create Swimable; create Amphibian">
+      <change afterPath="$PROJECT_DIR$/src/Carp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Crocodile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Feedable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GoldenFish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Moveable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Omnivorous.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reptile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scavenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tuna.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Amphibian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Amphibian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Flyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flyable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Flysquirrel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flysquirrel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Goat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Goat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Herbivore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mammal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mammal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Platypus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Platypus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Predator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Swimable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Swimable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Walkable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Walkable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Woof.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Woof.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zoo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,13 +59,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/alexey/edu/Java/OOPSeminar2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alexey/edu/Java/OOPSeminar2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -71,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680201461610</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create Swimable; create Amphibian">
+      <created>1680351838035</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680351838035</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="seminar complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="seminar complete" />
+    <MESSAGE value="create Swimable; create Amphibian" />
+    <option name="LAST_COMMIT_MESSAGE" value="create Swimable; create Amphibian" />
   </component>
 </project>

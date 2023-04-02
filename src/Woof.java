@@ -1,4 +1,4 @@
-public class Woof extends Predator implements Walkable{
+public class Woof extends Mammal implements Walkable, Predator{
     public Woof(String name) {
         super(name);
     }
@@ -11,5 +11,15 @@ public class Woof extends Predator implements Walkable{
     @Override
     public int runSpeed() {
         return 40;
+    }
+
+    @Override
+    public int speed() {
+        return 40;
+    }
+
+    @Override
+    public boolean jump() {
+        return true;
     }
 }

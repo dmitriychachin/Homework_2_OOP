@@ -1,4 +1,5 @@
-public class Cow extends Herbivore implements Walkable{
+public class Cow extends Mammal implements Walkable{
+
     public Cow(String name) {
         super(name);
     }
@@ -11,5 +12,15 @@ public class Cow extends Herbivore implements Walkable{
     @Override
     public int runSpeed() {
         return 20;
+    }
+
+    @Override
+    public int speed() {
+        return 0;
+    }
+
+    @Override
+    public boolean jump() {
+        return false;
     }
 }

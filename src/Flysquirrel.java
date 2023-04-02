@@ -1,4 +1,4 @@
-public class Flysquirrel extends Herbivore implements Walkable, Flyable{
+public class Flysquirrel extends Mammal implements Walkable, Flyable, Herbivore {
     public Flysquirrel(String name) {
         super(name);
     }
@@ -16,5 +16,20 @@ public class Flysquirrel extends Herbivore implements Walkable, Flyable{
     @Override
     public int runSpeed() {
         return 30;
+    }
+
+    @Override
+    public int speed() {
+        return 27;
+    }
+
+    @Override
+    public boolean jump() {
+        return true;
+    }
+
+    @Override
+    public String feed() {
+        return "Орехи, грибы";
     }
 }

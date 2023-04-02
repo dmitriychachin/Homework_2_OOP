@@ -1,10 +1,5 @@
-public abstract class Herbivore extends Mammal{
-
-    public Herbivore(String name) {
-        super(name);
-    }
-    @Override
-    public String feed (){
+public interface Herbivore extends Feedable{
+    default String feed (){
         return "Трава";
     }
 

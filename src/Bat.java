@@ -1,4 +1,4 @@
-public class Bat extends Predator implements Flyable{
+public class Bat extends Mammal implements Flyable, Predator{
     public Bat(String name) {
         super(name);
     }
@@ -15,5 +15,15 @@ public class Bat extends Predator implements Flyable{
     @Override
     public int flySpeed() {
         return 70;
+    }
+
+    @Override
+    public int speed() {
+        return 70;
+    }
+
+    @Override
+    public boolean jump() {
+        return false;
     }
 }

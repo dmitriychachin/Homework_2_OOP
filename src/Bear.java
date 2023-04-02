@@ -1,4 +1,4 @@
-public class Bear extends Predator implements Walkable{
+public class Bear extends Mammal implements Walkable, Omnivorous, Swimable, Speakable{
 
     private int speed;
     public Bear(String name, int speed) {
@@ -15,5 +15,25 @@ public class Bear extends Predator implements Walkable{
     @Override
     public int runSpeed() {
         return speed;
+    }
+
+    @Override
+    public int speed() {
+        return 60;
+    }
+
+    @Override
+    public boolean jump() {
+        return true;
+    }
+
+    @Override
+    public String feed() {
+        return Omnivorous.super.feed();
+    }
+
+    @Override
+    public int swimSpeed() {
+        return 35;
     }
 }

@@ -2,8 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Zoo {
-    private List <Animal> animals = new ArrayList<>();
+    protected List <Animal> animals = new ArrayList<>();
     private Radio radio = new Radio();
+
+    private Lake terrarium = new Lake();
 
     public void addAnimal (Animal newAnimal){
         this.animals.add(newAnimal);
@@ -25,7 +27,7 @@ public class Zoo {
     private List<Speakable> noises (){
         List<Speakable> res = new ArrayList<>();
         for (Animal animal:animals) {
-            res.add(animal);
+            res.add((Speakable) animal);
         }
         res.add(radio);
         return res;
@@ -71,5 +73,9 @@ public class Zoo {
             }
         }
         return (Animal)champ;
+    }
+
+    public Animal championBySwim(){
+        return this.terrarium.championBySwim();
     }
 }
