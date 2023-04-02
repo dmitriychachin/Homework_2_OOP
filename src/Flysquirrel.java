@@ -5,7 +5,7 @@ public class Flysquirrel extends Mammal implements Walkable, Flyable, Herbivore 
 
     @Override
     public String speak() {
-        return null;
+        return "ктр-ктр-ктр";
     }
 
     @Override

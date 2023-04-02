@@ -5,33 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b5665be-4bc6-43b3-b24d-29b0d572edf3" name="Changes" comment="create Swimable; create Amphibian">
-      <change afterPath="$PROJECT_DIR$/src/Carp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Crocodile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Feedable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Fish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GoldenFish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Moveable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Omnivorous.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reptile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scavenger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tuna.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Amphibian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Amphibian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Flyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flyable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Flysquirrel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flysquirrel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Goat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Goat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Herbivore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mammal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mammal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Platypus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Platypus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Predator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Swimable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Swimable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Walkable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Walkable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Woof.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Woof.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GoldenFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoldenFish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tuna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuna.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zoo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -121,5 +102,198 @@
     <MESSAGE value="seminar complete" />
     <MESSAGE value="create Swimable; create Amphibian" />
     <option name="LAST_COMMIT_MESSAGE" value="create Swimable; create Amphibian" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>84</line>
+          <properties class="Zoo" method="destroyAquaSystem">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>19</line>
+          <properties class="GoldenFish" method="destroyEcosystem">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>4</line>
+          <properties class="GoldenFish" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Zoo.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GoldenFish.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -5,9 +5,16 @@ public class Main {
         zoo.addAnimal(new Bear("М.Потапыч", 60));
         zoo.addAnimal(new Platypus("Пэрри"));
         zoo.addAnimal(new Woof("Серый"));
+        zoo.addAnimal(new Carp("Усатик"));
+        zoo.addAnimal(new Carp("Толстяк"));
         zoo.addAnimal(new Goat("Маня"));
         zoo.addAnimal(new Bat("Микки"));
         zoo.addAnimal(new Bear("Косолапыч", 61));
+        zoo.addAnimal(new Tuna("Попрыгунчик"));
+        zoo.addAnimal(new Tuna("Обжора"));
+        zoo.addAnimal(new GoldenFish("Немо", zoo));
+        zoo.showAll();
+        zoo.addAnimal(new GoldenFish("Синтия", zoo));
 
         zoo.noise();
         zoo.showAll();
@@ -17,6 +24,9 @@ public class Main {
         System.out.println();
         System.out.println("Чемпион по полёту: ");
         System.out.println(zoo.championByFly());
+        System.out.println();
+        System.out.println("Чемпион по плаванию: ");
+        System.out.println(zoo.championBySwim());
     }
 
 }

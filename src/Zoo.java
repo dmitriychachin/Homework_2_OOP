@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Zoo {
-    protected List <Animal> animals = new ArrayList<>();
+    private List <Animal> animals = new ArrayList<>();
     private Radio radio = new Radio();
 
-    private Lake terrarium = new Lake();
+    private static Lake terrarium = new Lake();
 
     public void addAnimal (Animal newAnimal){
         this.animals.add(newAnimal);
@@ -27,7 +28,9 @@ public class Zoo {
     private List<Speakable> noises (){
         List<Speakable> res = new ArrayList<>();
         for (Animal animal:animals) {
-            res.add((Speakable) animal);
+            if (animal instanceof Speakable) {
+                    res.add((Speakable) animal);
+            }
         }
         res.add(radio);
         return res;
@@ -76,6 +79,28 @@ public class Zoo {
     }
 
     public Animal championBySwim(){
-        return this.terrarium.championBySwim();
+        return this.terrarium.championBySwim(this.animals);
+    }
+
+    protected void destroyAquaSystem (){
+        Random rnd = new Random();
+        int war = 5;
+        while (war>0) {
+            for (int i = this.animals.size() - 1; i >= 0; i--) {
+                if (this.animals.get(i) instanceof Swimable && !(this.animals.get(i) instanceof Walkable) && !(this.animals.get(i) instanceof Pest)) {
+                    int event = rnd.nextInt(100);
+                    if (event > 10) {
+                        this.animals.remove(this.animals.get(i));
+                    }
+                }
+                if (this.animals.get(i) instanceof Swimable && !(this.animals.get(i) instanceof Walkable) && !(this.animals.get(i) instanceof Predator)) {
+                    int event = rnd.nextInt(100);
+                    if (event > 30) {
+                        this.animals.remove(this.animals.get(i));
+                    }
+                }
+            }
+            war--;
+        }
     }
 }

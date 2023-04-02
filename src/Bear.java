@@ -1,4 +1,4 @@
-public class Bear extends Mammal implements Walkable, Omnivorous, Swimable, Speakable{
+public class Bear extends Mammal implements Walkable, Omnivorous, Swimable{
 
     private int speed;
     public Bear(String name, int speed) {

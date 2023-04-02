@@ -1,11 +1,13 @@
-public class GoldenFish extends Fish implements Omnivorous {
-    private int counter = 0;
+public class GoldenFish extends Fish implements Omnivorous, Pest {
+    private static int counter;
 
-    public GoldenFish(String name) {
+
+    public GoldenFish(String name, Zoo ecosystem) {
         super(name);
         this.counter++;
-        if (this.counter > 1) {
-            destroyEcosystem();
+        if (this.counter > 1 && this.counter <= 30) {
+            destroyEcosystem(ecosystem);
+
         }
     }
 
@@ -14,16 +16,23 @@ public class GoldenFish extends Fish implements Omnivorous {
         return 20;
     }
 
-    private void destroyEcosystem() {
+    @Override
+    public void destroyEcosystem(Zoo ecosystem) {
         int pair;
-        if (this.counter % 2 == 0) {
-            pair = this.counter / 2;
-        } else {
-            pair = (this.counter - 1) / 2;
+        if (this.counter < 30) {
+            if (this.counter % 2 == 0) {
+                pair = this.counter / 2;
+            } else {
+                pair = (this.counter - 1) / 2;
+            }
+            String name = String.format("Золотая рыбка %d-го поколения", pair);
+            ecosystem.addAnimal(new GoldenFish(name, ecosystem));
         }
-        while (pair>0){
-            String name = String.format("generation %d", pair);
-            GoldenFish fish = new GoldenFish(name);
+        else if (this.counter == 30) {
+            System.out.println("Нельзя было запускать золотых рыбок в этот водоём. \nУвы, экосистема уничтожена.");
+            ecosystem.destroyAquaSystem();
         }
     }
+
+
 }

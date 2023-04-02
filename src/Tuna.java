@@ -1,4 +1,4 @@
-public class Tuna extends Fish implements Predator{
+public class Tuna extends Fish implements Predator, Pest{
     public Tuna(String name) {
         super(name);
     }
@@ -11,5 +11,10 @@ public class Tuna extends Fish implements Predator{
     @Override
     public int swimSpeed() {
         return 40;
+    }
+
+    @Override
+    public void destroyEcosystem(Zoo ecosystem) {
+        ecosystem.destroyAquaSystem();
     }
 }
