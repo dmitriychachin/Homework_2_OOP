@@ -7,7 +7,17 @@ public class GoldenFish extends Fish implements Omnivorous, Pest {
         this.counter++;
         if (this.counter > 1 && this.counter <= 30) {
             destroyEcosystem(ecosystem);
+        }
+    }
 
+    public GoldenFish(String name, Zoo ecosystem, boolean occupation) {
+        super(name);
+        this.counter++;
+        if (occupation) {
+            ecosystem.addAnimal(this);
+        }
+        if (this.counter > 1 && this.counter <= 30) {
+            destroyEcosystem(ecosystem);
         }
     }
 
@@ -26,10 +36,12 @@ public class GoldenFish extends Fish implements Omnivorous, Pest {
                 pair = (this.counter - 1) / 2;
             }
             String name = String.format("Золотая рыбка %d-го поколения", pair);
-            ecosystem.addAnimal(new GoldenFish(name, ecosystem));
-        }
-        else if (this.counter == 30) {
-            System.out.println("Нельзя было запускать золотых рыбок в этот водоём. \nУвы, экосистема уничтожена.");
+            GoldenFish gf = new GoldenFish(name, ecosystem, true);
+            ecosystem.addAnimal(gf);
+//            if (counter % 30 == 0) ecosystem.destroyAquaSystem();
+        } else if (this.counter == 30) {
+            System.out.println("|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|\n|   Нельзя было запускать золотых рыбок в этот водоём!   |\n|              Увы, экосистема уничтожена.               |\n|________________________________________________________|");
+            System.out.println();
             ecosystem.destroyAquaSystem();
         }
     }

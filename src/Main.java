@@ -14,10 +14,7 @@ public class Main {
         zoo.addAnimal(new Tuna("Обжора"));
         zoo.addAnimal(new GoldenFish("Немо", zoo));
         zoo.showAll();
-        zoo.addAnimal(new GoldenFish("Синтия", zoo));
 
-        zoo.noise();
-        zoo.showAll();
         System.out.println();
         System.out.println("Чемпион по бегу: ");
         System.out.println(zoo.championByRun());
@@ -27,6 +24,14 @@ public class Main {
         System.out.println();
         System.out.println("Чемпион по плаванию: ");
         System.out.println(zoo.championBySwim());
+
+        zoo.addAnimal(new GoldenFish("Синтия", zoo));
+
+        zoo.noise();
+        zoo.showAll();
+
+        System.out.println("\nВыжили:");
+        zoo.showSurvive();
     }
 
 }

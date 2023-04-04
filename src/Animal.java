@@ -4,12 +4,24 @@ public abstract class Animal{
 
     public Animal(String name) {
         this.name = name;
+        this.alive = true;
+    }
+
+    public void die(){
+        this.alive = false;
+    }
+
+    public boolean isAlive() {
+        return alive;
     }
 
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
         res.append(String.format("Кличка животного: %s\n", this.name));
+        if (alive == false){
+            res.append("Животное погибло\n");
+        }
 //                .append(String.format("Корм: %s\n", feed()));
 //                .append(String.format("Голос: %s\n", speak()));
 

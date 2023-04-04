@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-public class Zoo {
+public class Zoo implements Iterable<Animal> {
     private List <Animal> animals = new ArrayList<>();
     private Radio radio = new Radio();
 
@@ -15,6 +16,14 @@ public class Zoo {
     public void showAll (){
         for (Animal animal: this.animals) {
             System.out.println(animal);
+        }
+    }
+
+    public void showSurvive (){
+        for (Animal animal: this) {
+            if (animal.isAlive()) {
+                System.out.println(animal);
+            }
         }
     }
 
@@ -84,23 +93,40 @@ public class Zoo {
 
     protected void destroyAquaSystem (){
         Random rnd = new Random();
-        int war = 5;
+        int war = 1;
         while (war>0) {
-            for (int i = this.animals.size() - 1; i >= 0; i--) {
-                if (this.animals.get(i) instanceof Swimable && !(this.animals.get(i) instanceof Walkable) && !(this.animals.get(i) instanceof Pest)) {
+            for (Animal aqua:this) {
+                if (aqua instanceof Swimable && !(aqua instanceof Walkable) && !(aqua instanceof Pest)) {
                     int event = rnd.nextInt(100);
-                    if (event > 10) {
-                        this.animals.remove(this.animals.get(i));
+                    if (event > 20) {
+                        aqua.die();
                     }
                 }
-                if (this.animals.get(i) instanceof Swimable && !(this.animals.get(i) instanceof Walkable) && !(this.animals.get(i) instanceof Predator)) {
+                else if (aqua instanceof Swimable && !(aqua instanceof Walkable) && !(aqua instanceof Predator)) {
                     int event = rnd.nextInt(100);
-                    if (event > 30) {
-                        this.animals.remove(this.animals.get(i));
+                    if (event > 50) {
+                        aqua.die();
                     }
                 }
             }
             war--;
         }
+    }
+
+    @Override
+    public Iterator<Animal> iterator() {
+        return new Iterator<Animal>() {
+            int counter = 0;
+            @Override
+            public boolean hasNext() {
+                if (counter < animals.size()) return true;
+                return false;
+            }
+
+            @Override
+            public Animal next() {
+                return animals.get(counter++);
+            }
+        };
     }
 }
