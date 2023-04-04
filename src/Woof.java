@@ -1,6 +1,6 @@
 public class Woof extends Mammal implements Walkable, Predator{
     public Woof(String name) {
-        super(name);
+        super(String.format("волк %s",name));
     }
 
     @Override

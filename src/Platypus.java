@@ -1,6 +1,6 @@
 public class Platypus extends Mammal implements Walkable, Swimable, Predator{
     public Platypus(String name) {
-        super(name);
+        super(String.format("утконос %s",name));
     }
 
     @Override

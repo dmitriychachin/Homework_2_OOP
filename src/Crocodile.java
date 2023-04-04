@@ -1,6 +1,6 @@
 public class Crocodile extends Reptile implements Predator{
     public Crocodile(String name) {
-        super(name);
+        super(String.format("крокодил %s",name));
     }
 
     @Override

@@ -1,4 +1,4 @@
-public abstract class Animal{
+public abstract class Animal implements Comparable<Animal>{
     private String name;
     private boolean alive;
 
@@ -18,7 +18,7 @@ public abstract class Animal{
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
-        res.append(String.format("Кличка животного: %s\n", this.name));
+        res.append(String.format("Животное: %s\n", this.name));
         if (alive == false){
             res.append("Животное погибло\n");
         }
@@ -27,5 +27,12 @@ public abstract class Animal{
 
         return res.toString();
 
+    }
+
+    @Override
+    public int compareTo(Animal o) {
+        if (!o.alive) return -1;
+        if (!this.alive) return 1;
+        return (this.name.compareTo(o.name));
     }
 }

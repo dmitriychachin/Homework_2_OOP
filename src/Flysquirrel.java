@@ -1,6 +1,6 @@
 public class Flysquirrel extends Mammal implements Walkable, Flyable, Herbivore {
     public Flysquirrel(String name) {
-        super(name);
+        super(String.format("белка-летяга %s",name));
     }
 
     @Override

@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Zoo implements Iterable<Animal> {
     private List <Animal> animals = new ArrayList<>();
@@ -14,16 +11,36 @@ public class Zoo implements Iterable<Animal> {
     }
 
     public void showAll (){
-        for (Animal animal: this.animals) {
+        List<Animal> all = this.toList();
+        Collections.sort(all);
+        for (Animal animal:all) {
             System.out.println(animal);
         }
     }
 
     public void showSurvive (){
+        List<Animal> alives = new ArrayList<>();
         for (Animal animal: this) {
             if (animal.isAlive()) {
-                System.out.println(animal);
+                alives.add(animal);
             }
+        }
+        Collections.sort(alives);
+        for (Animal item:alives) {
+            System.out.println(item);
+        }
+    }
+
+    public void showDie (){
+        List<Animal> dies = new ArrayList<>();
+        for (Animal animal: this) {
+            if (!animal.isAlive()) {
+                dies.add(animal);
+            }
+        }
+        Collections.sort(dies);
+        for (Animal item:dies) {
+            System.out.println(item);
         }
     }
 
@@ -98,13 +115,19 @@ public class Zoo implements Iterable<Animal> {
             for (Animal aqua:this) {
                 if (aqua instanceof Swimable && !(aqua instanceof Walkable) && !(aqua instanceof Pest)) {
                     int event = rnd.nextInt(100);
-                    if (event > 20) {
+                    if (event > 40) {
                         aqua.die();
                     }
                 }
                 else if (aqua instanceof Swimable && !(aqua instanceof Walkable) && !(aqua instanceof Predator)) {
                     int event = rnd.nextInt(100);
-                    if (event > 50) {
+                    if (event > 30) {
+                        aqua.die();
+                    }
+                }
+                else if (aqua instanceof Swimable && !(aqua instanceof Walkable)){
+                    int event = rnd.nextInt(100);
+                    if (event > 60) {
                         aqua.die();
                     }
                 }
@@ -128,5 +151,13 @@ public class Zoo implements Iterable<Animal> {
                 return animals.get(counter++);
             }
         };
+    }
+
+    public List<Animal> toList (){
+        List<Animal> animalList = new ArrayList<>();
+        for (Animal item:this) {
+            animalList.add(item);
+        }
+        return animalList;
     }
 }

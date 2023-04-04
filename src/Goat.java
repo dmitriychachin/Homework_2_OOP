@@ -1,6 +1,6 @@
 public class Goat extends Mammal implements Herbivore, Walkable{
     public Goat(String name) {
-        super(name);
+        super(String.format("коза %s",name));
     }
 
     @Override

@@ -1,7 +1,7 @@
 public class Cow extends Mammal implements Walkable{
 
     public Cow(String name) {
-        super(name);
+        super(String.format("корова %s",name));
     }
 
     @Override

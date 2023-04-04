@@ -1,6 +1,6 @@
 public class Bat extends Mammal implements Flyable, Predator{
     public Bat(String name) {
-        super(name);
+        super(String.format("летучая мышь %s",name));
     }
 
     @Override

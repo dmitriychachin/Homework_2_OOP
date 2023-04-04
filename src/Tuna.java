@@ -1,6 +1,6 @@
 public class Tuna extends Fish implements Predator, Pest{
     public Tuna(String name) {
-        super(name);
+        super(String.format("тунец %s",name));
     }
 
     @Override

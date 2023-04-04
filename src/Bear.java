@@ -2,7 +2,7 @@ public class Bear extends Mammal implements Walkable, Omnivorous, Swimable{
 
     private int speed;
     public Bear(String name, int speed) {
-        super(name);
+        super(String.format("медведь %s",name));
         this.speed = speed;
     }
 
