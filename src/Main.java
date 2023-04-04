@@ -18,12 +18,21 @@ public class Main {
         zoo.addAnimal(new GoldenFish("Немо", zoo));
         zoo.addAnimal(new Frog("Царевна"));
 
-
+        run(zoo);
 
     }
 
-    public static void menu(Zoo zoo) {
+    public static void run(Zoo zoo) {
         Scanner input = new Scanner(System.in);
+        int choise=-1;
+        while (choise != 0){
+            printMenu();
+            choise = input.nextInt();
+            switcher(choise, zoo);
+        }
+    }
+
+    public static void printMenu(){
         StringBuilder header = new StringBuilder();
         header
                 .append("г---------------  Меню  ----------------|\n")
@@ -35,11 +44,14 @@ public class Main {
                 .append("|        Они разрушат экосистему.)      |\n")
                 .append("|                                       |\n")
                 .append("|  0. Выйти                             |\n")
-                .append("|_______________________________________|\n");
+                .append("|_______________________________________|\n")
+                .append("|         Выберите пункт:               |\n");
 
 
-        System.out.println("Выберите пункт:\n");
-        int choise = input.nextInt();
+        System.out.println(header);
+    }
+
+    public static void switcher (int choise, Zoo zoo){
         switch (choise) {
             case 1:
                 System.out.println("\n Все:");
@@ -47,6 +59,7 @@ public class Main {
                 break;
             case 2:
                 zoo.noise();
+                break;
             case 3:
                 System.out.println();
                 System.out.println("Чемпион по бегу: ");
@@ -61,8 +74,8 @@ public class Main {
             case 4:
                 zoo.addAnimal(new GoldenFish("Синтия", zoo));
 
-                System.out.println("\nПогибли:");
-                zoo.showDie();
+//                System.out.println("\nПогибли:");
+//                zoo.showDie();
 
                 System.out.println("\nВыжили:");
                 zoo.showSurvive();

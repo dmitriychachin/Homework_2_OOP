@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b5665be-4bc6-43b3-b24d-29b0d572edf3" name="Changes" comment="доведён до ума захват экосистемы золотыми рыбками">
-      <change afterPath="$PROJECT_DIR$/src/Frog.java" afterDir="false" />
+    <list default="true" id="2b5665be-4bc6-43b3-b24d-29b0d572edf3" name="Changes" comment="прописано меню">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Amphibian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Amphibian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Carp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Carp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Crocodile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crocodile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Flysquirrel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flysquirrel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Goat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Goat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GoldenFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoldenFish.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Platypus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Platypus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tuna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuna.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Woof.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Woof.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zoo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680593764640</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="прописано меню">
+      <created>1680602470196</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680602470196</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,7 +114,8 @@
     <MESSAGE value="seminar complete" />
     <MESSAGE value="create Swimable; create Amphibian" />
     <MESSAGE value="доведён до ума захват экосистемы золотыми рыбками" />
-    <option name="LAST_COMMIT_MESSAGE" value="доведён до ума захват экосистемы золотыми рыбками" />
+    <MESSAGE value="прописано меню" />
+    <option name="LAST_COMMIT_MESSAGE" value="прописано меню" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
